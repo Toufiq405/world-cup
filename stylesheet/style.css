@@ -1,8 +1,225 @@
+/* ================================
+
+    Css index
+    ---------
+    1. common css
+    2. header section
+    3. Side menu design
+    4. Blog section design
 
 
+================================= */
+/* =================================
 
+    1. common css
+
+================================= */
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+  background-color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Reusable Style */
+.container {
+  width: 1321px;
+  margin: 50px 0;
+}
+
+.btn {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  background: #DD0000;
+  border-radius: 5px;
+  padding: 16px 25px;
+  display: inline-block;
+}
+
+
+/* =================================
+
+    2. Header section
+
+================================= */
 .header-grid-container {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 60px;
+  background-color: #000;
+  padding: 30px;
+  padding-left: 70px;
+  border-radius: 30px;
+}
 
+.header-text-box {
+  color: #FFFFFF;
+}
+
+.header-title {
+  font-weight: 700;
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+
+.header-description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.header-img {
+  position: relative;
+}
+
+.header-img img {
+  width: 570px;
+  position: absolute;
+  bottom: -30px;
+}
+
+/* =================================
+
+    3. Side menu design
+
+================================= */
+.blogs-and-menu-container {
+  display: flex;
+}
+
+.menu-container {
+  width: 312px;
+  height: 312px;
+  background: #161616;
+  border-radius: 10px;
+  padding: 30px;
+  margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menu-item {
+  background: #FFFFFF;
+  padding: 25px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.menu-item:nth-child(3) {
+  background: #DD0000;
+  color: #FFFFFF;
+}
+
+/* =================================
+
+    4. Blog section design
+
+================================= */
+.blogs-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+}
+
+.blog-item {
+  border: 1px solid #E8E8E8;
+  border-radius: 10px;
+  box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+}
+
+.blog-img-part img {
+  width: 100%;
+}
+
+.blog-text-part {
+  padding: 20px;
+}
+
+.blog-topic {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.blog-topic span {
+  border: 1px solid;
+  padding: 3px 7px;
+  border-radius: 5px;
+}
+
+.blog-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.blog-time,
+.blog-comments {
+  display: inline-block;
+  color: rgba(22, 22, 22, 0.7);
+}
+
+.blog-time {
+  margin-right: 30px;
+}
+
+.margin-r-5 {
+  margin-right: 5px;
+}
+
+/* =================================
+
+    5. Footer section design
+
+================================= */
+footer {
+  background: #161616;
+  height: 444px;
+  display: flex;
+  justify-content: center;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-title {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-items {
+  width: 898px;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+}
+.footer-item p {
+  color: #FFFFFF;
+  cursor: pointer;
+  text-align: center;
 }
