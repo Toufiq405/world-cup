@@ -82,6 +82,8 @@ main {
 
 .header-img img {
     width: 570px;
+    position: relative;
+    bottom: -35px;
 }
 
 /* =================================
@@ -281,6 +283,8 @@ footer {
 
     .header-img img {
         width: 100%;
+        position: relative;
+        bottom: -35px;
     }
 
     .blogs-and-menu-container {
@@ -340,6 +344,8 @@ footer {
 
     .header-img img {
         width: 100%;
+        position: relative;
+        bottom: -35px;
     }
 
     .blogs-and-menu-container {
@@ -360,6 +366,7 @@ footer {
         border: 1px solid #E8E8E8;
         width: 230px;
     }
+
     .match-container,
     .blogs-container {
         grid-template-columns: repeat(2, 1fr);
@@ -376,19 +383,23 @@ footer {
         padding: 16px 25px;
         display: inline-block;
     }
+
     .footer-item {
         text-align: center;
     }
 }
+
 /* for laptop devices */
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
     .container {
         width: 90%;
     }
+
     .header-grid-container {
         grid-template-columns: repeat(2, 1fr);
         padding: 30px;
     }
+
     .header-text-box {
         text-align: center;
     }
@@ -399,21 +410,27 @@ footer {
 
     .header-img img {
         width: 100%;
+        position: relative;
+        bottom: -170px;
     }
+
     .match-container,
     .blogs-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 /* for desktop devices */
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
     .container {
         width: 90%;
     }
+
     .header-grid-container {
         grid-template-columns: repeat(2, 1fr);
         padding: 30px;
     }
+
     .header-text-box {
         text-align: center;
     }
@@ -425,6 +442,7 @@ footer {
     .header-img img {
         width: 100%;
     }
+
     .match-container,
     .blogs-container {
         grid-template-columns: repeat(3, 1fr);
