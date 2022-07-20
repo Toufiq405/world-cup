@@ -86,6 +86,24 @@ main {
     bottom: -35px;
 }
 
+/* some Animation in header*/
+@keyframes left-right-movement {
+    0% {
+        transform: translate(0px);
+    }
+
+    100% {
+        transform: translate(15px);
+    }
+}
+
+.btn {
+    position: relative;
+    animation: left-right-movement 1.12s ease-in-out infinite alternate;
+}
+
+/* alternate */
+
 /* =================================
 
     3. Side menu design
@@ -230,6 +248,17 @@ footer {
     column-gap: 40px;
 }
 
+.footer-icon {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 30px;
+}
+
+.footer-icon a {
+    color: #DD0000;
+    font-size: 20px;
+}
+
 /* =================================
 
     6. Upcoming Match page design
@@ -308,6 +337,10 @@ footer {
 
     .view-all-btn {
         visibility: hidden;
+    }
+
+    footer {
+        height: auto;
     }
 
     .footer-items p {
