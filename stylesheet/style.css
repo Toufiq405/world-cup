@@ -264,10 +264,6 @@ footer {
     6. Upcoming Match page design
 
 ================================= */
-.match-container {
-    grid-template-rows: 242px;
-}
-
 .match-item {
     display: flex;
     flex-direction: column;
