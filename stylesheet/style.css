@@ -6,6 +6,8 @@
     2. header section
     3. Side menu design
     4. Blog section design
+    5. Footer section design
+    6. Upcoming Match page design
 
 
 ================================= */
@@ -22,6 +24,9 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  font-size: 10px;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -40,7 +45,7 @@ main {
 .btn {
   text-decoration: none;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 200%;
   color: #FFFFFF;
   background: #DD0000;
   border-radius: 5px;
@@ -70,12 +75,12 @@ main {
 
 .header-title {
   font-weight: 700;
-  font-size: 70px;
+  font-size: 700%;
   margin-bottom: 30px;
 }
 
 .header-description {
-  font-size: 16px;
+  font-size: 160%;
   font-weight: 400;
   margin-bottom: 30px;
 }
@@ -119,10 +124,10 @@ main {
   color: #000;
   text-align: center;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 200%;
 }
 
-.menu-item:nth-child(3) {
+.active-effect {
   background: #DD0000;
   color: #FFFFFF;
 }
@@ -132,12 +137,15 @@ main {
     4. Blog section design
 
 ================================= */
+.match-container,
 .blogs-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 24px;
+  width: 100%;
 }
 
+.match-item,
 .blog-item {
   border: 1px solid #E8E8E8;
   border-radius: 10px;
@@ -153,7 +161,7 @@ main {
 }
 
 .blog-topic {
-  font-size: 16px;
+  font-size: 160%;
   font-weight: 500;
   margin-bottom: 15px;
 }
@@ -165,7 +173,7 @@ main {
 }
 
 .blog-title {
-  font-size: 16px;
+  font-size: 160%;
   font-weight: 500;
   margin-bottom: 15px;
 }
@@ -195,16 +203,18 @@ footer {
   display: flex;
   justify-content: center;
 }
+
 .footer-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .footer-title {
   color: #FFFFFF;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 400%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,13 +223,109 @@ footer {
 hr {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .footer-items {
   width: 898px;
-  display: grid;
-  grid-template-columns: repeat(6,1fr);
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
 }
+
 .footer-item p {
   color: #FFFFFF;
   cursor: pointer;
   text-align: center;
+  font-size: 160%;
+}
+
+/* =================================
+
+    6. Upcoming Match page design
+
+================================= */
+.match-container {
+  grid-template-rows: 242px;
+}
+
+.match-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 22px;
+}
+
+.flags {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.flags span {
+  margin: 0 11px;
+}
+
+/* =================================
+
+    7. Responsive design
+
+================================= */
+/* for mobile devices */
+@media only screen and (max-width: 576px) {
+
+  .container {
+    width: 90%;
+  }
+
+  .header-grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding-left: 30px;
+  }
+
+  .header-text-box {
+    text-align: center;
+  }
+  .header-title {
+    font-size: 560%;
+  }
+  .header-description p {
+    margin: auto;
+    width: 90%;
+    height: 3em;
+    overflow: hidden;
+  }
+
+  .header-img img {
+    width: 90%;
+    left: 10%;
+    bottom: -30px;
+  }
+
+  .blogs-and-menu-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-container {
+    background: #FFFFFF;
+  }
+
+  .menu-item {
+    border: 1px solid #E8E8E8;
+  }
+
+  .blogs-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-items {
+    flex-direction: column;
+  }
+  .footer-item p {
+    font-size: 110%;
+  }
+  .match-container {
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,242px);
+  }
 }
