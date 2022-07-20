@@ -200,8 +200,6 @@ main {
 footer {
   background: #161616;
   height: 444px;
-  display: flex;
-  justify-content: center;
 }
 
 .footer-container {
@@ -209,6 +207,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .footer-title {
@@ -327,5 +326,8 @@ hr {
   .match-container {
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(6,242px);
+  }
+  .match-item {
+    font-size: 160%;
   }
 }
